@@ -5,8 +5,8 @@ const axios=require('axios');
 newsRouter.get('',async(req,res)=>{
     //  res.render('news');
     try {
-        // const API_KEY='2d2344d9892c4c14a4e4fcea914f9318';
-        const newsAPI=await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=2d2344d9892c4c14a4e4fcea914f9318
+       
+        const newsAPI=await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=
 `);
 res.status(200).
  render('news',{veri:newsAPI.data});
